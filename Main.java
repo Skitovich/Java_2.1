@@ -1,18 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int bill = 10000;                         // Последние две цифры это копейки
-        int paymentBill = 1000;                   // Последние две цифры это копейки
-        int bonus;
+       int ticketPrice = 105000;   // Последние две цифры это копейки
+       int miles = ticketPrice/2000;
+       System.out.println(miles);
 
-        if (paymentBill >= 1000) {
-            bonus = paymentBill / 10000;
-        } else {
-            bonus = 0;
-        }
-
-        int billAfterFill = bill + paymentBill + bonus;
-
-        System.out.println(billAfterFill);
     }
 }
-
